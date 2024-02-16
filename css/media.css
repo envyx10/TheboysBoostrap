@@ -1,0 +1,39 @@
+/******************************************************/
+/*        Style sheet for THEBOYS - ACTION TV         */ 
+/*        Autor: Pablo Gil Diaz                       */
+/*        Version: 1.0.0                              */
+/*        comments: class project 2024 boostrap       */
+/******************************************************/
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  
+p{ 
+color: #141414 !important;
+font-size: 1.1em !important;
+font-family: 'Lato', sans-serif !important
+      
+}
+        
+}
+    
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  
+.fs-main-md, .imbetterTEXT, .soon{
+font-size: 7.3em !important;
+font-weight: 800 !important;
+color: #141414;
+}
+
+}
+  
+
+
+
+
+
+
+
+
+
