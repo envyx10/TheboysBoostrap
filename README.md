@@ -28,9 +28,10 @@ El tema lo he elegido ya que me encanta mucho hacer proyectos inspirados en seri
 
 - Hero section
 - Introduccion
+- Galería
 - Artículos
 - Próximamente
-- Galería
+- Form
 - Footer
 
 > <h3> Hero Section </h3>
