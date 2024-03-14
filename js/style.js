@@ -15,6 +15,45 @@ btn.addEventListener("click", function() {
 
 // Bootstrap handles closing the modal when the user clicks "x" or outside the modal
 
+function validateForm() {
+  // Get references to form elements and error messages
+  const nombre = document.getElementById("nombre");
+  const nombreHelp = document.getElementById("nombreHelp");
+  const email = document.getElementById("email");
+  const emailHelp = document.getElementById("emailHelp");
+  const termsCheckbox = document.getElementById("exampleCheck1");
+  const termsHelp = document.getElementById("termsHelp");
 
- //
+  // Reset error messages initially
+  resetError(nombreHelp);
+  resetError(emailHelp);
+  resetError(termsHelp);
 
+  // Validation checks
+  let isValid = true;
+
+  // Check if name is empty
+  if (nombre.value.trim() === "") {
+    nombreHelp.textContent = "Name is required.";
+    isValid = false;
+  }
+
+  // Check if email is valid format (basic check)
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email.value)) {
+    emailHelp.textContent = "Invalid email format.";
+    isValid = false;
+  }
+
+  // Check if terms and conditions are accepted
+  if (!termsCheckbox.checked) {
+    termsHelp.textContent = "You must accept the terms and conditions.";
+    isValid = false;
+  }
+
+  return isValid; // Return false to prevent form submission if validation fails
+}
+
+function resetError(element) {
+  element.textContent = ""; // Clear error message
+}

@@ -127,7 +127,7 @@
                 <h3 class="card-title">THE BOYS - HOMELANDER</h3>
                 <div class="bg1"></div>
                 <p class="card-text">With the appearance of a movie star and the powers of a god, Homelander is the greatest of the existing superheroes and the leader of The Seven. In addition to flying, he has superhuman strength and super hearing. His vision can pierce virtually any material and destroy it with laser vision...</p>
-                <button class="btn btn-dark ">Read More</button>
+                <button class="btn btn-dark "><a href="https://www.primevideo.com/-/es/detail/The-Boys/0KRGHGZCHKS920ZQGY5LBRF7MA">Read More</a></button>
               </div>
             </div>
         
@@ -137,7 +137,7 @@
                 <h3 class="card-title ">WORLD - GEN V</h3>
                 <div class="bg1 pt"></div>
                 <p class="card-text">Explores the training of the first generation of superheroes who know about Compound V, and that their powers were injected into them and were not a gift from God. These young, competitive heroes will put their physical and moral limits to the test, competing for the coveted top ranking...</p>
-                <button class="btn btn-dark ">Read More</button>
+                <button class="btn btn-dark "><a href="https://www.filmaffinity.com/es/film300335.html">Read More</a></button>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@
                 <h3 class="card-title pt-2">THE BOYS - KIMIKO</h3>
                 <div class="bg1 "></div>
                 <p class="card-text">Kimiko Miyashiro, also known as The Female, is a fictional character in the Amazon Prime Video series The Boys, portrayed by Karen Fukuhara. Kimiko is a mute Japanese superhero who was forced to undergo experiments by Vought International that gave her superhuman strength, agility, and healing abilities. She is a member of The Boys, a group of vigilantes who take on corrupt superheroes.</p>
-                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-dark"><a href="https://www.primevideo.com/-/es/detail/The-Boys/0KRGHGZCHKS920ZQGY5LBRF7MA">Read More</a></button>
               </div>
 
             </div>
@@ -169,7 +169,7 @@
                 <div class="bg1"></div>
 
                 <p class="card-text">Black Noir is a fictional character in the Amazon Prime Video series The Boys, portrayed by Nathan Mitchell. Black Noir is a mysterious superhero who is a member of The Seven, a group of superheroes who are marketed and controlled by Vought International. Black Noir is a silent and enigmatic figure who wears a black mask and suit that covers his entire body. He is known for his ruthlessness and his loyalty to Homelander, the leader of The Seven.</p>
-                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-dark"><a href="https://www.primevideo.com/-/es/detail/The-Boys/0KRGHGZCHKS920ZQGY5LBRF7MA">Read More</a></button>
 
               </div>
 
@@ -205,53 +205,43 @@
         
 
          <!-- FORM -->
-
-        <section class="container" id="cont">
-
-          <div class="row pt-5">
-
-            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+         
+         <section class="container" id="cont">
+          <div class="row">
+            <div class="col-12 col-lg-6 d-flex p-5 justify-content-center align-items-center">
               <img src="./img/formimg.png" alt="Imagen" class="img-fluid">
             </div>
-
-            <div class="col-12 col-lg-6 col-xxl-6">
-              <form action="" method="post" onsubmit="return validacion()"
-                    class="border-0 border-secondary p-5 mt-5">
-                  <h1 class="text-center text-danger ">Data entry</h1>
-          
-                  <div class="mb-3">
-                    <label for="nombre" class="form-label">Name: <span class="text-danger">*</span></label>
-                    <input onchange="resetear('nombre')" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
-                    <div id="nombreHelp" class="form-text text-danger">Name required</div>
-                  </div>
-          
-                  <div class="mb-3">
-                    <label for="apellidos" class="form-label">last names: <span class="text-danger">*</span></label>
-                    <input  type="text" class="form-control" id="apellidos" name="apellidos" aria-describedby="apellidosHelp">
-                    <div id="apellidosHelp" class="form-text text-danger">last names required</div>
-                  </div>
-          
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email: <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text text-danger">Wrong mail format</div>
-                  </div>
-          
-                  <div class="my-5 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">
-                      <a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                      class="text-dark fw-bold text-decoration-none">
-                      I accept the terms and conditions</a></label>
-                        <div id="nombreHelp" class="form-text text-danger">You must accept</div>
-                  </div>
-    
-                  <button type="submit" class="btn btn-dark">Submit</button>
-                </form>
-
-              </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+              <form action="" method="post" onsubmit="return validateForm()" class="border-0 border-secondary p-5 mt-5">
+                <h1 class="text-center text-danger">Data entry</h1>
+        
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">User: <span class="text-danger">*</span></label>
+                  <input onchange="resetError('nombre')" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+                  <div id="nombreHelp" class="form-text text-danger">Name required</div>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email: <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text text-danger">Wrong email format</div>
+                </div>
+        
+                <div class="my-5 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">
+                    <a id="trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-dark fw-bold text-decoration-none">
+                      I accept the terms and conditions
+                    </a>
+                  </label>
+                  <div id="termsHelp" class="form-text text-danger">You must accept</div>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
             </div>
+          </div>
         </section>
+        
         
         <!-- FOOOTER -->
         <footer class="container pb-5 pt-5 ">
@@ -282,20 +272,10 @@
             <div class="col-6 col-md ps-lg-5">
               <h5>Resources</h5>
               <ul class="list-unstyled">
-                <li><a class="link-secondary" href="#">Resource name</a></li>
-                <li><a class="link-secondary" href="#">Resource</a></li>
-                <li><a class="link-secondary" href="#">Another resource</a></li>
-                <li><a class="link-secondary" href="#">Final resource</a></li>
-              </ul>
-            </div>
-
-            <div class="col-6 col-md ps-lg-5 ">
-              <h5>About</h5>
-              <ul class="list-unstyled">
-                <li><a class="link-secondary" href="#">Team</a></li>
-                <li><a class="link-secondary" href="#">Locations</a></li>
-                <li><a class="link-secondary" href="#">Privacy</a></li>
-                <li><a class="link-secondary" href="#">Terms</a></li>
+                <li><a class="link-secondary" href="https://www.w3schools.com">Resource w3schools</a></li>
+                <li><a class="link-secondary" href="https://codepen.io/trending">CodePen</a></li>
+                <li><a class="link-secondary" href="https://alphacoders.com/the-boys-wallpapers">Walpapper Abbys</a></li>
+                <li><a class="link-secondary" href="https://www.primevideo.com/dp/0O72M293BABLRSKIKQSD5LNLQU?ref_=dvm_pds_tit_ES_lb_s_g_mkw_s1UM1gWM0-dc&mrntrk=pcrid_613371762845_slid__pgrid_99646700630_pgeo_9047063_x__adext__ptid_kwd-379248855066&gclid=CjwKCAiAvdCrBhBREiwAX6-6UoE4pSdldEX-jp4UdU1z48KhvTjskeHGuH49Wajll3gVkjSeSMqdMhoC4h4QAvD_BwE&gclsrc=aw.ds">Prime video</a></li>
               </ul>
             </div>
 
@@ -319,7 +299,7 @@
                     <a href="https://wall.alphacoders.com/by_sub_category.php?id=317706&name=The+Boys+Wallpapers" target="_blank"><p>- WALLPAPER ABYSS</p></a>
                     <a href="https://www.primevideo.com/dp/0O72M293BABLRSKIKQSD5LNLQU?ref_=dvm_pds_tit_ES_lb_s_g_mkw_s1UM1gWM0-dc&mrntrk=pcrid_613371762845_slid__pgrid_99646700630_pgeo_9047063_x__adext__ptid_kwd-379248855066&gclid=CjwKCAiAvdCrBhBREiwAX6-6UoE4pSdldEX-jp4UdU1z48KhvTjskeHGuH49Wajll3gVkjSeSMqdMhoC4h4QAvD_BwE&gclsrc=aw.ds" target="_blank"><p>- PRIME VIDEO </p></a>
                     <hr>
-                    <p>Copyright © 2023 All Rights Reserved by Envyx10 </p>
+                    <p>web created for educational purposes, inspired by the series the boys</p>
                     <p>The content of this website is for school use only, to implement all concepts learned, 
                       it is not for commercial use. 
                       All rights reserved for the prime video series - theboys. </p>
@@ -339,7 +319,9 @@
 
     <!-- SCRIPTS PARA INICIALIZAR SLIDE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+     
+    <script src="./js/style.js"></script>
+ 
     </body>
 
 </html> 

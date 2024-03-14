@@ -25,6 +25,11 @@ PARA BOOSTRAP /
 BASICS 
 */
 
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
 p{ 
   color: #141414 !important;
   font-size: 1.2em !important;
